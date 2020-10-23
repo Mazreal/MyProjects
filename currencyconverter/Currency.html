@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Currency.css" type="text/css">
+    <script type="text/javascript" src="Currency.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <img src="img/background.jpg" id="background">
+    <title>Currency</title>
+  </head>
+  <body>
+    <h1 class='deepshadow'>Currency Converter</h1>
+    <table>
+      <th>Enter Currency on hand:</th><th>Convert to:</th>
+      <tr>
+        <td>
+          <select id="hand">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="UK">UK Pound</option>
+            <option value="YEN">Japanese Yen</option>
+            <option value="CAD">Canadian Dollar</option>
+          </select>
+        </td>
+        <td>
+          <select id="converted">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="UK">UK Pound</option>
+            <option value="YEN">Japanese Yen</option>
+            <option value="CAD">Canadian Dollar</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="currency"></td>
+        <td><input type="text" id="result" disabled></td>
+      </tr>
+    </table>
+    <input type="button" id="calculate" value="Calculate" onclick="calculate();">
+  </body>
+</html>
