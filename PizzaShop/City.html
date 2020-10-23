@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<script type="text/javascript" src="City.js"></script>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="author" content="673970" >
+<link href="City.css" type="text/css" rel="stylesheet">
+<img src="images/background.jpg" id="background">
+</head>
+<body>
+<div id="full">
+<div id="header">
+<h1>City Delicatessen</h1>
+</div>
+<h5>Today is: <span id="dtfield"></span></h5>
+<h5><span id="welcome"></span></h5>
+<br>
+<div id="registration">
+<table border="1">
+  <tr><td>Firstname: </td><td><input type="text" id="firstname" size="25" maxlength="25" autofocus="yes"></td></tr>
+  <tr><td>Lastname: </td><td><input type="text" id="lastname" size="25" maxlength="25" autofocus="yes"></td></tr>
+  <tr><td>Address: </td><td><input type="text" id="address" size="35" maxlength="25" autofocus="yes"></td></tr>
+  <tr><td>Telephone: </td><td><input type="tel" id="phone" size="25" pattern="\d{3} \d{3} \d{4}" placeholder="555 555 5555"></td></tr>
+</table>
+<input type="button" value="save" onclick="addClient();">
+</div>
+
+
+<h2>PIZZA--------------------------------------</h2>
+
+<div id="pizza">
+<h4>*Choices</h4>
+<table border="1">
+  <tr><td><img src="images/cheese.jpg" id="pCheese"></td><td>Super Cheesy</td><td><input type="radio" name="pizzaChoice" id="Super Cheesy" size="10"></td></tr>
+  <tr><td><img src="images/meaty.jpg" id="pMeaty"></td><td>Extra Meaty</td><td><input type="radio" name="pizzaChoice" id="Extra Meaty" size="10"></td></tr>
+  <tr><td><img src="images/veggie.jpg" id="pVeggie"></td><td>Really Veggy</td><td><input type="radio" name="pizzaChoice" id="Really Veggy" size="10"></td></tr>
+</table>
+<h4>*Size</h4>
+<table border="1">
+  <tr><td><input type="radio" name="pSize" id="Small" value ="8.50">Small</td><td>$8.50</td></tr>
+  <tr><td><input type="radio" name="pSize" id="Medium" value ="11.50">Medium</td><td>$11.50</td></tr>
+  <tr><td><input type="radio" name="pSize" id="Large" value ="14.00">Large</td><td>$14.00</td></tr>
+  <tr><td><input type="radio" name="pSize" id="Extra Large" value ="16.50">Extra Large</td><td>$16.50</td></tr>
+</table>
+<h4>Extra Toppings</h4>
+<p>Each extra toppings add an additional $1.75 to the total.</p>
+<table border="1">
+  <tr><td><input type="checkbox" name="pTopping1" id="pTop1" value ="1.75">Extra Cheese</td></tr>
+  <tr><td><input type="checkbox" name="pTopping2" id="pTop2" value ="1.75">Pepperoni</td></tr>
+  <tr><td><input type="checkbox" name="pTopping3" id="pTop3" value ="1.75">Mushrooms</td></tr>
+  <tr><td><input type="checkbox" name="pTopping4" id="pTop4" value ="1.75">Bacon</td></tr>
+  <tr><td><input type="checkbox" name="pTopping5" id="pTop5" value ="1.75">Olives</td></tr>
+</table>
+<h4>*Quantity</h4>
+<input type="number" id=pQuantity min="0" size="5"> Input number of items.
+<br>
+
+</div>
+<input type="button" name="addpizza" value="Add Pizza" id="addpizza" onclick="return addPizza(0)" enabled>
+<input type="button" name="savepizza" value="Save" id="savePizza" onclick="return addPizza(1)" disabled>
+<input type="button" name="deletepizza" value="Delete" id="deletePizza" onclick="return deletePizza()" disabled>
+
+<br>
+
+
+<h2>SANDWICHES---------------------------------</h2>
+<div id="sandwich">
+<h4>*Choices</h4>
+<table border="1">
+  <tr><td><img src="images/veggiesandwich.jpg"></td><td><input type="radio" name="sChoice" id="All Garden Vegetarian" value="7.50">All Garden Vegetarian</td><td>$7.50</td></tr>
+  <tr><td><img src="images/beef.jpg"></td><td><input type="radio" name="sChoice" id="Big Beef on a Bun" value="8.50">Big Beef on a Bun</td><td>$8.50</td></tr>
+  <tr><td><img src="images/mixed.jpg"></td><td><input type="radio" name="sChoice" id="Mixed Grill" value="9.50">Mixed Grill</td><td>$9.50</td></tr>
+  <tr><td><img src="images/pork.jpg"></td><td><input type="radio" name="sChoice" id="Grilled Pork" value="9.50">Grilled Pork</td><td>$9.50</td></tr>
+</table>
+<br>
+<h4>*Quantity</h4>
+<input type="number" id=sQuantity min="0" size="5"> Input number of items.
+</div>
+<input type="button" name="addsandwich" value="Add Sandwich" id="addSandwich" onclick="return addSandwich(0)">
+<input type="button" name="savesandwich" value="Save" id="saveSandwich" onclick="return addSandwich(1)" disabled="true">
+<input type="button" name="deleteSandwich" value="Delete" id="deleteSandwich" onclick="return deleteSandwich()" disabled="true">
+<br>
+
+<h2>DRINKS--------------------------------------</h2>
+<div id="drinks">
+<h4>Choices</h4>
+<table border="1">
+  <tr><td><input type="radio" name="dChoice" id="Cola" value="Cola">Cola</td></tr>
+  <tr><td><input type="radio" name="dChoice" id="Orange" value="Orange">Orange</td></tr>
+  <tr><td><input type="radio" name="dChoice" id="Lemon" value="Lemon">Lemon</td></tr>
+  <tr><td><input type="radio" name="dChoice" id="Root Beer" value="Root Beer">Root Beer</td></tr>
+</table>
+<h4>Sizes</h4>
+<table border="1">
+  <tr><td><input type="radio" name="dSize" id="Small" value=1.25>Small</td><td>$1.25</td></tr>
+  <tr><td><input type="radio" name="dSize" id="Medium" value=1.75>Medium</td><td>$1.75</td></tr>
+  <tr><td><input type="radio" name="dSize" id="Large" value=2.00>Large</td><td>$2.00</td></tr>
+</table>
+<h4>Quantity</h4>
+<input type="number" id="dQuantity" min="0" size="5"> Input number of items.
+</div>
+<input type="button" name="adddrink" value="Add Drink" id="addDrink" onclick="return addDrink(0)">
+<input type="button" name="savedrink" value="Save" id="saveDrink" onclick="return addDrink(1)" disabled>
+<input type="button" name="deleteDrink" value="Delete" id="deleteDrink" onclick="return deleteDrink()" disabled>
+</div>
+<div id="cart">
+  <h2>Your Information:</h2>
+  <span id="inform"></span>
+  <h3>Pizza:</h3><span id="pDisplay"></span>
+  <h3>Sandwiches:</h3><span id="sDisplay"></span>
+  <h3>Drinks:</h3><span id="dDisplay"></span>
+  <h2>Your Total:<span id="tDisplay"></span></h2>
+ <input type="button" name="submit" value="Submit Orders" onclick="placeOrder()">
+</div>
+
+</body>
+</html>
