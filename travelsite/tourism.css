@@ -1,0 +1,101 @@
+/*tourism.css*/
+header
+{
+  margin-top: 0%;
+  align-items: center;
+	justify-content: center;
+	display: flex;
+}
+header img
+{
+  width: 200px;
+  height: auto;
+}
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(46, 49, 49, 0.6);
+  color: white;
+  font-size: 100%;
+  font-family: CenturyGothic, sans-serif;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  padding-left: 1%;
+  padding-right: 1%;
+
+
+}
+#background
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+body
+{
+  text-align: center;
+}
+#slideshow
+{
+    text-indent: 0;
+    border: thin silver solid;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0.5em;
+}
+
+#slideshow img
+{
+  width: 500px;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s;
+}
+#slideshow figcaption
+{
+  text-align: center;
+  font-weight: bold;
+  font-family: CenturyGothic, sans-serif;
+  font-size: 125%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+#slideshow img.fadeOut
+{
+  opacity: 0;
+}
+#slideshow figcaption.fadeOut
+{
+  opacity: 0;
+}
+
+
+
+h1
+{
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bolder;
+  text-align: center;
+}
+h1.shadow
+{
+	color: #ffffff;
+	letter-spacing: 0.05em;
+  text-shadow:
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 5px  0 #616875;
+
+}
