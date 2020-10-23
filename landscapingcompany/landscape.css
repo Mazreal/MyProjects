@@ -1,0 +1,116 @@
+/*landscape.css*/
+
+html
+{
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Helvetica;
+}
+h4
+{
+  font-weight: bold;
+  font-family: Helvetica;
+  font-family: Helvetica;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px  0 black;
+}
+
+h1.hit-the-floor
+{
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+}
+h3
+{
+  text-align: center;
+  padding-right: 30%;
+  font-family: Helvetica;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px  0 black;
+}
+
+#planters input[type="button"]
+{
+  width: 190px;
+}
+
+#
+#squareDim
+{
+  visibility: hidden;
+  position: absolute;
+  bottom: 11%;
+}
+#cylinderDim
+{
+  visibility: hidden;
+  position: absolute;
+  bottom: 10%;
+
+}
+#sphereDim
+{
+  visibility: hidden;
+  position: absolute;
+  bottom: 11%;
+}
+#coneDim
+{
+  visibility: hidden;
+  position: absolute;
+  bottom: 6%;
+}
+#dimensions
+{
+  visibility: hidden;
+}
+#reportOut
+{
+  position: absolute;
+}
+.container
+{
+  padding-left: 10%;
+  width: 80%;
+}
+
+.information1
+{
+
+    width:50%;
+    float: left;
+
+}
+
+.information2
+{
+    text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px  0 black;
+    text-align: left;
+    margin-left: 40%;
+    padding-left: 10%;
+    font-size: 150%;
+}
